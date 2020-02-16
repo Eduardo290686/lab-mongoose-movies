@@ -1,2 +1,14 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h2>Celebrities</h2>
+{{#each celebrities}}
+  <a href="/celebrity/{{_id}}"><h3>{{name}}</h3></a>
+  <a href="/editCelebrity/{{_id}}">Edit</a>
+  <a href="/deleteCelebrity/{{_id}}">DELETE</a>
+{{/each}}
+<a href="/newCelebrity">Add a new celebrity</a>
+<h2>Movies</h2>
+{{#each movies}}
+  <a href="/movie/{{_id}}"><h3>{{title}}</h3></a>
+  <a href="/editMovie/{{_id}}">Edit</a>
+  <a href="/deleteMovie/{{_id}}">DELETE</a>
+{{/each}}
+<a href="/newMovie">Add a new movie</a>
