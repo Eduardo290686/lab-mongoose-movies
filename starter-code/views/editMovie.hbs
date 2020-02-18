@@ -1,11 +1,13 @@
-<h2>Edit movie</h2>
-<form action="/editMovie/{{movie._id}}" method="POST">
-  <p>Title</p>
-  <input name="title" placeholder={{movie.title}} type="text">
-  <p>Genre</p>
-  <input name="genre" placeholder={{movie.genre}} type="text">
-  <p>Plot</p>
-  <input name="plot" placeholder={{movie.plot}} type="text">
-  <p>Submit</p>
-  <button type="submit">Update</button>
-</form>
+<div class='full-page-container'>
+  <h2 class="normal-text">Edit movie</h2>
+  <form action="/editMovie/{{movie._id}}" method="POST">
+    <p class="normal-text">Title</p>
+    <input name="title" placeholder={{movie.title}} type="text" class="normal-text">
+    <p class="normal-text">Genre</p>
+    <input name="genre" placeholder={{movie.genre}} type="text" class="normal-text">
+    <p class="normal-text">Plot</p>
+    <input name="plot" placeholder={{movie.plot}} type="text" class="normal-text">
+    <p class="normal-text">Submit</p>
+    <button type="submit" class="normal-text">Update</button>
+  </form>
+</div>

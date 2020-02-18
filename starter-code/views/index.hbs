@@ -1,14 +1,54 @@
-<h2>Celebrities</h2>
-{{#each celebrities}}
-  <a href="/celebrity/{{_id}}"><h3>{{name}}</h3></a>
-  <a href="/editCelebrity/{{_id}}">Edit</a>
-  <a href="/deleteCelebrity/{{_id}}">DELETE</a>
-{{/each}}
-<a href="/newCelebrity">Add a new celebrity</a>
-<h2>Movies</h2>
-{{#each movies}}
-  <a href="/movie/{{_id}}"><h3>{{title}}</h3></a>
-  <a href="/editMovie/{{_id}}">Edit</a>
-  <a href="/deleteMovie/{{_id}}">DELETE</a>
-{{/each}}
-<a href="/newMovie">Add a new movie</a>
+<div class='full-page-container' id='index-container'>
+  <div class='info-container'>
+    <table>
+      <caption>
+        <h2>Celebrities</h2>
+      </caption>
+      {{#each celebrities}}
+      <tr>
+        <td>
+          <a href="/celebrity/{{_id}}">
+            <h3>{{name}}</h3>
+          </a>
+        </td>
+        <td>
+          <a href="/editCelebrity/{{_id}}">EDIT</a>
+        </td>
+        <td>
+          <a href="/deleteCelebrity/{{_id}}">DELETE</a>
+        </td>
+      </tr>
+      {{/each}}
+      <tr>
+        <td class='add' colspan='3'>
+          <a href="/newCelebrity">Add a new celebrity</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class='info-container'>
+    <table>
+      <caption>
+        <h2>Movies</h2>
+      </caption>
+      {{#each movies}}
+      <tr>
+        <td>
+          <a href="/movie/{{_id}}">
+            <h3>{{title}}</h3>
+          </a>
+        </td>
+        <td>
+          <a href="/editMovie/{{_id}}">EDIT</a>
+        </td>
+        <td>
+          <a href="/deleteMovie/{{_id}}">DELETE</a>
+        </td>
+      </tr>
+      {{/each}}
+      <td class='add' colspan='3'>
+        <a href="/newMovie">Add a new movie</a>
+      </td>
+    </table>
+  </div>
+</div>
